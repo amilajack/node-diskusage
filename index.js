@@ -1,1 +1,1 @@
-module.exports = require('./build/Release/diskusage.node');
+module.exports = require('./build/Release/diskusage.node').default;
