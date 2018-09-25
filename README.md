@@ -1,5 +1,8 @@
 node-diskusage
 ==============
+[![Build Status](https://travis-ci.org/amilajack/node-diskusage.svg?branch=master)](https://travis-ci.org/amilajack/node-diskusage)
+[![Build status](https://ci.appveyor.com/api/projects/status/4ddhl0l7aif37xw9/branch/master?svg=true)](https://ci.appveyor.com/project/amilajack/node-diskusage/branch/master)
+
 This module implements platform specific bindings to obtain disk usage information on Windows and POSIX platforms. Windows support is backed by [GetDiskFreeSpaceEx](http://msdn.microsoft.com/en-us/library/windows/desktop/aa364937/) and POSIX is implemented with [statvfs](http://www.freebsd.org/cgi/man.cgi?query=statvfs).
 
 ## Installation
