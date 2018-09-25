@@ -1,19 +1,13 @@
 node-diskusage
 ==============
-
 This module implements platform specific bindings to obtain disk usage information on Windows and POSIX platforms. Windows support is backed by [GetDiskFreeSpaceEx](http://msdn.microsoft.com/en-us/library/windows/desktop/aa364937/) and POSIX is implemented with [statvfs](http://www.freebsd.org/cgi/man.cgi?query=statvfs).
 
-Installation
-------------
-
-Install with `npm`:
-
-``` bash
+## Installation
+```bash
 $ npm install diskusage
 ```
 
-Usage
---------
+## Usage
 
 The module exposes two functions. `check` takes a path/mount point as the first argument and a callback as the second. The callback takes two arguments `err` and `info`. `err` will be an `Error` if something went wrong. `info` contains three members: `available`, `free` and `total` in bytes.
 
@@ -23,10 +17,8 @@ The module exposes two functions. `check` takes a path/mount point as the first 
 
 `checkSync` only takes the path argument. It returns the same `info` on success, throws an `Error` on failure.
 
-Examples
---------
-
-``` js
+## Examples
+```js
 import disk from 'diskusage';
 import os from 'os';
 
