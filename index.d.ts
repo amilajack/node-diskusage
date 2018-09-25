@@ -4,5 +4,4 @@ type DiskUsage = {
     total: number;
 }
 
-export function check(path: string, callback: (error: Error, result: DiskUsage) => void): void;
-export function checkSync(path: string): DiskUsage;
+export default function checkSync(path: string): DiskUsage;

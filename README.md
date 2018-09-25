@@ -27,44 +27,12 @@ Examples
 --------
 
 ``` js
-const disk = require('diskusage');
-const os = require('os');
+import disk from 'diskusage';
+import os from 'os';
 
-let path = os.platform() === 'win32' ? 'c:' : '/';
-
-disk.check(path, function(err, info) {
-	if (err) {
-		console.log(err);
-	} else {
-		console.log(info.available);
-		console.log(info.free);
-		console.log(info.total);
-	}
-});
-
-try {
-	let info = disk.checkSync(path);
-	console.log(info.available);
-	console.log(info.free);
-	console.log(info.total);
-}
-catch (err) {
-	console.log(err);
-}
-```
-
-TypeScript
-----------
-
-The module has an embedded .d.ts file. You can use `import * as diskusage from 'diskusage'`.
-
-```
-type DiskUsage = {
-    available: number;
-    free: number;
-    total: number;
-}
-
-export function check(path: string, callback: (error: Error, result: DiskUsage) => void): void;
-export function checkSync(path: string): DiskUsage;
+const path = os.platform() === 'win32' ? 'c:' : '/';
+const info = disk.checkSync(path);
+console.log(info.available);
+console.log(info.free);
+console.log(info.total);
 ```
