@@ -4,7 +4,7 @@ This module implements platform specific bindings to obtain disk usage informati
 
 ## Installation
 ```bash
-$ npm install diskusage
+$ npm install @amilajack/diskusage
 ```
 
 ## Usage
@@ -19,7 +19,7 @@ The module exposes two functions. `check` takes a path/mount point as the first 
 
 ## Examples
 ```js
-import disk from 'diskusage';
+import disk from '@amilajck/diskusage';
 import os from 'os';
 
 const path = os.platform() === 'win32' ? 'c:' : '/';
