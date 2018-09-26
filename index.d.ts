@@ -1,7 +1,7 @@
-type DiskUsage = {
-    available: number;
-    free: number;
-    total: number;
+export type DiskUsage = {
+  available: number;
+  free: number;
+  total: number;
 }
 
-export default function checkSync(path: string): DiskUsage;
+export function getDiskUsage(path: string): DiskUsage;
