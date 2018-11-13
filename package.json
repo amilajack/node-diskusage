@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jduncanator/node-diskusage.git"
+    "url": "https://github.com/amilajack/node-diskusage.git"
   },
   "keywords": [
     "disk",
@@ -23,12 +23,12 @@
     "free",
     "space"
   ],
-  "author": "jduncanator",
+  "author": "amilajack",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jduncanator/node-diskusage/issues"
+    "url": "https://github.com/amilajack/node-diskusage/issues"
   },
-  "homepage": "https://github.com/jduncanator/node-diskusage",
+  "homepage": "https://github.com/amilajack/node-diskusage",
   "devDependencies": {
     "@babel/core": "^7.1.0",
     "@babel/preset-env": "^7.1.0",
@@ -43,5 +43,9 @@
   },
   "jest": {
     "testEnvironment": "node"
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": ">=10"
   }
 }
